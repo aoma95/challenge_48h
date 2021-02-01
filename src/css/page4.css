@@ -21,12 +21,15 @@ body {
 }
 .interaction * {
     position: absolute;
+    user-select: none;
 }
 .interaction .interact {
     cursor: pointer;
 }
 .interaction .code {
     transform: rotate(-27deg);
+    font-weight: 400;
+    font-family: sans-serif;
 }
 .interaction .input {
     color: #badc58;
