@@ -1,0 +1,16 @@
+body {
+
+    background-image: url("../img/admin.jpg");
+    background-size: 1920px 1000px;
+    background-repeat: no-repeat;
+
+}
+
+button {
+    position: fixed;
+    left: 1750px;
+    bottom: 20px;
+
+    background: transparent;
+    border: none !important;
+}
