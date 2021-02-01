@@ -4,4 +4,8 @@ module.exports = app => {
         res.render('index.html');
     });
 
+    app.get('/cams', function (req, res) {
+        res.render('page2.html');
+    });
+
 }
