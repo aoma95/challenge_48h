@@ -6,6 +6,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true}));
 
 app.set('views', __dirname + '/src/pages');
+app.use(express.static(__dirname + '/src'));
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 app.use(express.static(__dirname + '/src'));
