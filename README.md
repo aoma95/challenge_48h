@@ -5,6 +5,7 @@
 - Installation des dépendances
 
 ```shell script
+npm update
 npm install
 ```
 
