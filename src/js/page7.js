@@ -6,7 +6,7 @@ window.addEventListener('load', async () => {
 
     let expulsion = new Audio('../sons/expulsion.mp3');
     let textpop = new Audio('../sons/textpop.mp3');
-    let doublevote = new Audio('../sons/among-us-vote-sound-effect.mp3');
+    let vote = new Audio('../sons/among-us-vote-sound-effect.mp3');
     let win = new Audio('../sons/win.mp3');
     let loose = new Audio('../sons/loose.mp3');
     let img = document.querySelector('img');
@@ -23,9 +23,14 @@ window.addEventListener('load', async () => {
 
     await sleep(1000);
     img.src = "../img/voteeach.jpg";
-    doublevote.play();
+    vote.play();
+    console.log('aze');
+    await sleep(300);
+    vote.play();
     Array.from(document.querySelectorAll('.vote')).map(element => {
         if(select === element.id) return;
+
+        vote.play();
 
         element.addEventListener("click", () => {
             select = element.id;
