@@ -1,0 +1,10 @@
+.interaction .code {
+    transform: rotate(-27deg);
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.interaction .input {
+    color: #badc58;
+    font-weight: 400;
+    font-family: sans-serif;
+}
