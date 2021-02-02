@@ -9,7 +9,7 @@ html,body{
     font-family: 'In your face, joffrey!';
     font-style: normal;
     font-weight: normal;
-    src: local('../asset/In your face, joffrey!.woff'), url('../asset/In your face, joffrey!.woff') format('woff');
+    src: local('/asset/font.woff'), url('/asset/font.woff') format('woff');
 }
 .stars {
     position: absolute;
