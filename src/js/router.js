@@ -4,7 +4,7 @@ module.exports = app => {
         res.render('index.html');
     });
 
-    app.get('/crisis', function (req, res) {
-        res.render('page3.html');
+    app.get('/page3', (req, res) => {
+        res.render('page3.html')
     });
 }
