@@ -49,6 +49,6 @@ function changePicture() {
     const body = document.querySelector('body');
     const img = document.querySelector("body img");
     const img2 = document.createElement("img");
-    img.src = "../img/cameras.jpg";
+    img.src = "/img/cameras.jpg";
     body.appendChild(img2);
 }
