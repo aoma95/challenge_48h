@@ -58,26 +58,6 @@ window.addEventListener('load', async () => {
                 await sleep(3000);
                 img.src="../img/win.jpg";
                 win.play();
-
-
-                // vOrange.addEventListener('click', () => {
-                //     expulsion.play();
-                //     while(body.firstChild){
-                //         body.removeChild(body.firstChild);
-                //     }
-                //     const image2=document.createElement('img');
-                //     image2.src="../img/orangeeject.jpg";
-                //     image2.id="img";
-                //     document.querySelector('body').appendChild(image2);
-                //     let img=document.getElementById('img');
-                //
-                //     setTimeout(() => {
-                //         img.setAttribute("src","../img/win.jpg");
-                //         win.play();
-                //     }, 4000);
-                // });
-
-
             } else {
                 console.log('Pink was ejected');
                 img.src="../img/pinkeject.jpg";
