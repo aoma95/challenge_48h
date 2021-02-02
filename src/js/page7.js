@@ -50,10 +50,10 @@ window.addEventListener('load', async () => {
     Array.from(document.querySelectorAll('.valid')).map(element => {
         element.addEventListener("click", async () => {
             if(element.id !== select) return
-            img.src = ``
             if(select === "orange") {
+                window.location.href = "/page8"
             } else {
-                alert("loose")
+                window.location.href = "/page9"
             }
         })
     })
