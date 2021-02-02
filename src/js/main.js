@@ -4,7 +4,7 @@ const originalData = []
 
 
 const setInteractionSize = () => {
-    let img = document.querySelector('img')
+    let img = document.querySelector('img:not(.ignore)')
     let div = document.querySelector('.interaction')
 
     let height = img.offsetHeight
