@@ -26,7 +26,7 @@ window.addEventListener('load', () => {
         setInteractionSize()
 
         setTimeout(() => {
-            window.location.href = "/cams"
+            window.location.href = "/page2"
         }, 4000)
     })
 

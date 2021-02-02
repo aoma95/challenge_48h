@@ -3,19 +3,19 @@ module.exports = app => {
         res.render('index.html');
     })
 
-    app.get('/cams', (req, res) => {
+    app.get('/page2', (req, res) => {
         res.render('page2.html');
     })
 
-    app.get('/crisis', (req, res) => {
+    app.get('/page3', (req, res) => {
         res.render('page3.html')
     })
 
-    app.get('/mdp', (req, res) => {
+    app.get('/page4', (req, res) => {
         res.render('page4.html')
     })
 
-    app.get('/adminmap', (req, res) => {
+    app.get('/page5', (req, res) => {
         res.render('page5.html')
     })
 
