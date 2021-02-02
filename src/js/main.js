@@ -35,7 +35,7 @@ const setImageSize = () => {
     }
 }
 
-window.onload = () => {
+window.addEventListener('load', () => {
     Array.from(document.querySelectorAll('.interaction *')).map(element => {
         let style = element.style.cssText.split(';').reduce((object, value) => {
             let declaration = value.split(':').map(e => e.trim())
@@ -56,4 +56,4 @@ window.onload = () => {
         setImageSize()
         setInteractionSize()
     })
-}
+})
