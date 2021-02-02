@@ -1,1 +1,18 @@
-const _0xf67a=['1436252WZYheq','67352GWJzOS','Escape','1RJQNdg','1lpUPEz','1tEjwaj','length','/crisis','ArrowUp','img','includes','key','19NYArQL','218cerrvT','src','ArrowRight','287831jeFsfd','location','649801OzUITq','ArrowLeft','addEventListener','load','2838825wWQBNS','1462622UxjvPI','ArrowDown','181HXlaGp','/img/cameras.jpg','querySelector'];const _0x4993=function(_0xb7e67f,_0x440899){_0xb7e67f=_0xb7e67f-0x147;let _0xf67a4b=_0xf67a[_0xb7e67f];return _0xf67a4b;};const _0xfee844=_0x4993;(function(_0x6024c3,_0x496371){const _0x4ea34f=_0x4993;while(!![]){try{const _0x1b1ab0=-parseInt(_0x4ea34f(0x154))*parseInt(_0x4ea34f(0x160))+parseInt(_0x4ea34f(0x14c))*parseInt(_0x4ea34f(0x157))+-parseInt(_0x4ea34f(0x147))+parseInt(_0x4ea34f(0x148))*parseInt(_0x4ea34f(0x153))+parseInt(_0x4ea34f(0x14b))*-parseInt(_0x4ea34f(0x15e))+-parseInt(_0x4ea34f(0x159))*parseInt(_0x4ea34f(0x14a))+parseInt(_0x4ea34f(0x15d));if(_0x1b1ab0===_0x496371)break;else _0x6024c3['push'](_0x6024c3['shift']());}catch(_0x3f1c69){_0x6024c3['push'](_0x6024c3['shift']());}}}(_0xf67a,0xc7c23),window[_0xfee844(0x15b)](_0xfee844(0x15c),()=>{const _0x37a64f=_0xfee844;let _0x11b28e=['ArrowUp',_0x37a64f(0x14f),'ArrowDown',_0x37a64f(0x15f),'ArrowLeft',_0x37a64f(0x156),_0x37a64f(0x15a),_0x37a64f(0x156),'b','a'],_0x17cee4=0x0;document[_0x37a64f(0x15b)]('keydown',_0x142ead=>{const _0x10938d=_0x37a64f;if(![..._0x11b28e,_0x10938d(0x149)][_0x10938d(0x151)](_0x142ead[_0x10938d(0x152)]))return;_0x142ead['preventDefault']();if(_0x17cee4===_0x11b28e[_0x10938d(0x14d)]&&_0x142ead['key']==='Escape')window[_0x10938d(0x158)]['href']=_0x10938d(0x14e);else _0x17cee4!==_0x11b28e['length']&&_0x11b28e[_0x17cee4]===_0x142ead[_0x10938d(0x152)]?_0x17cee4++:_0x17cee4=0x0;_0x17cee4===_0x11b28e[_0x10938d(0x14d)]&&(document[_0x10938d(0x162)](_0x10938d(0x150))[_0x10938d(0x155)]=_0x10938d(0x161));});}));
+window.addEventListener('load', () => {
+    let code = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a']
+    let index = 0
+    document.addEventListener('keydown', (e) => {
+        if(![...code, 'Escape'].includes(e.key)) return
+        e.preventDefault()
+        if(index === code.length && e.key === "Escape") {
+            window.location.href = "/page3"
+        } else if(index !== code.length && code[index] === e.key) {
+            index++
+        } else {
+            index = 0
+        }
+        if(index === code.length) {
+            document.querySelector('img').src = "/img/cameras.jpg"
+        }
+    })
+})
