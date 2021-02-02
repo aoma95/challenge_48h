@@ -1,54 +1,33 @@
+displayStars = (numberStar) => {
+    Array.from(Array(numberStar), () => {
+        let span = document.createElement('span')
+        let random = Math.min(Math.floor(Math.random() * 2), 2)
 
-let tailleArray = ["star tiny", "star normal", "star big"];
-let haut = (window.innerHeight);
-let larg = (window.innerWidth);
-let numberStar = 100;
-let body = document.querySelector('body');
-function popstar() {
-    var stellarnumb = 0;
-    while (stellarnumb < nombreetoile) {
-        var random = Math.floor(Math.random() * Math.floor(3));
-        var Size = tailleArray[random];
-        var pos_x = Math.round(Math.random() * larg);
-        var pos_y = Math.round(Math.random() * haut);
-        document.querySelector("body").innerHTML += `<div class="${Size}"
-        style="top:${pos_y}%;left:${pos_x}%"></div>`;
-        stellarnumb++;
-    }
-}
-function displayStars() {
-    for (var i = 0; i < numberStar; i++) {
+        span.classList.add("star", !random ? "tiny" : random === 1 ? "normal" : big)
+        span.style.top = `${Math.round(100 * Math.random())}%`
+        span.style.left = `${Math.round(100 * Math.random())}%`
 
-        var span = document.createElement('span');
-        span.classList.add("star", chooseStarClass());
-        span.style.top = Math.round(90 * Math.random()) + '%';
-        span.style.left = Math.round(100 * Math.random()) + '%';
-        document.querySelector('.stars').appendChild(span);
-    }
+        document.querySelector('.stars').appendChild(span)
+    })
 }
 
-function chooseStarClass() {
-    var starClass;
-    var randomNumber = Math.random();
-    if (randomNumber < 0.33) {
-        starClass = "tiny";
-    } else if (randomNumber < 0.66) {
-        starClass = "normal";
-    } else {
-        starClass = "big";
-    }
+window.addEventListener('load', () => {
+    displayStars(100)
 
-    return starClass;
-}
-displayStars();
+    document.querySelector("button").addEventListener('click', () => {
+        document.querySelector('.stars').remove()
+        document.querySelector('.main').remove()
 
-document.querySelector("button").addEventListener('click', () => {
-    body.innerText = "";
-    let img = document.createElement('img');
-    img.src = '../img/start.png';
-    img.id = 'cafete';
-    body.appendChild(img);
-    setTimeout(() => {
-        console.log("change de page va a la 2 ");
-    }, 4000);
+        let img = document.createElement('img')
+        img.src = '/img/start.png'
+        document.body.insertBefore(img, document.querySelector('script'))
+
+        setImageSize()
+        setInteractionSize()
+
+        setTimeout(() => {
+            window.location.href = "/page2"
+        }, 4000)
+    })
+
 })
