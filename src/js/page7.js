@@ -24,7 +24,6 @@ window.addEventListener('load', async () => {
     await sleep(1000);
     img.src = "../img/voteeach.jpg";
     vote.play();
-    console.log('aze');
     await sleep(300);
     vote.play();
     Array.from(document.querySelectorAll('.vote')).map(element => {
@@ -56,21 +55,20 @@ window.addEventListener('load', async () => {
     Array.from(document.querySelectorAll('.valid')).map(element => {
         element.addEventListener("click", async () => {
             if(element.id !== select) return;
+            Array.from(document.querySelectorAll('#orange')).map(el => el.remove())
+            Array.from(document.querySelectorAll('#pink')).map(el => el.remove())
+            console.log(`${select} was ejected!`)
+            img.src = `../img/${select}eject.jpg`
+            expulsion.play()
+            await sleep(3000)
             if(select === "orange") {
-                console.log('Orange was ejected');
-                img.src="../img/orangeeject.jpg";
-                expulsion.play();
-                await sleep(3000);
-                img.src="../img/win.jpg";
+                img.src = `../img/win.jpg`
                 win.play();
             } else {
-                console.log('Pink was ejected');
-                img.src="../img/pinkeject.jpg";
-                expulsion.play();
-                await sleep(3000);
-                img.src="../img/defeat.jpg";
+                img.src = `../img/defeat.jpg`
                 loose.play();
             }
+            Array.from(document.querySelectorAll('.interact')).map(el => el.addEventListener('click', () => window.location.href = "/"))
         })
     })
 })
