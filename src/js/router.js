@@ -17,4 +17,8 @@ module.exports = app => {
     app.get('/page3', (req, res) => {
         res.render('page3.html')
     });
+    app.get('/page5', (req, res) => {
+        res.render('page5.html')
+    })
+
 }
