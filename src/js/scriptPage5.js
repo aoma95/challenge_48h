@@ -1,6 +1,22 @@
 /**
  * Permet que l'utilisateur trouve le MDP.
  */
+
+window.addEventListener('load', () => {
+    let counter = 3
+    let riddles = [
+        {
+            question: "Je suis toujours devant tout le monde, mais personne ne peut me voir. Qui suis-je ?",
+            answer: "avenir"
+        }
+    ]
+
+    let enigma = riddles[Math.round(Math.random() * (riddles.length - 1))]
+
+    document.querySelector('#admin').addEventListener('click', () => {
+
+    })
+})
 function puzzleFonction() {
     
     //Une liste des localisations de la carte de Amoung Us.
