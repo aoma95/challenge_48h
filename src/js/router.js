@@ -4,4 +4,8 @@ module.exports = app => {
         res.render('index.html');
     });
 
+    app.get('/page8', (req, res) => {
+        res.render('page8.html')
+    })
+
 }
