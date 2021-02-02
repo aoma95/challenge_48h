@@ -1,7 +1,3 @@
-/**
- * Permet que l'utilisateur trouve le MDP.
- */
-
 window.addEventListener('load', () => {
     let counter = 3
     let riddles = [
@@ -15,16 +11,16 @@ window.addEventListener('load', () => {
 
     document.querySelector('#admin').addEventListener('click', () => {
         let check = prompt(enigma.question)
-        if(!check) return
-        if(check.toLowerCase() === enigma.answer.toLowerCase()) {
-            document.querySelector('img').src = "/img/map1.jpg"
+        if (!check) return
+        if (check.toLowerCase() === enigma.answer.toLowerCase()) {
+            document.querySelector('img').src = "/img/map.jpg"
             document.querySelector('#admin').remove()
             window.location.href = "/page6"
         } else {
             counter--
             alert(`Mot de passe incorrect, il vous reste ${counter} essai${counter > 1 ? "s" : ""}`)
         }
-        if(!counter) {
+        if (!counter) {
             alert("L'imposteur vous a tué.")
             window.location.href = "/"
         }

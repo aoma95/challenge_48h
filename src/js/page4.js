@@ -1,8 +1,8 @@
 
 const changeCode = (number) => {
     let input = document.querySelector('.input')
-    if(input.innerText.length >= 8) return
-    input.innerText+=number
+    if (input.innerText.length >= 8) return
+    input.innerText += number
 }
 
 const power = (number, power = 0) => !power ? 1 : Array.from(Array(power)).reduce((a) => a * number, 1)
@@ -24,9 +24,10 @@ window.onload = () => {
     let key = generateCode(1, true)
     document.querySelector(".code").innerText = `${password} ${key}`
 
-    // let crisis = new Audio('../sons/crisis.mp3')
-    // crisis.loop =true
-    // crisis.play()
+    let crisis = new Audio('../songs/crisis.mp3')
+    crisis.volume = .1
+    crisis.loop = true
+    crisis.play()
 
     Array.from(document.querySelectorAll(".key-digit")).map(element => {
         element.addEventListener("click", () => {
@@ -34,13 +35,13 @@ window.onload = () => {
         })
     })
     document.querySelector(".close").addEventListener("click", () => {
-       window.location.href = "/page3"
+        window.location.href = "/page3"
     })
     document.querySelector('.key-cancel').addEventListener("click", () => {
         document.querySelector('.input').innerText = ""
     })
     document.querySelector('.key-submit').addEventListener("click", () => {
-        if(parseInt(document.querySelector(".input").innerText) === crypt(password, key)) {
+        if (parseInt(document.querySelector(".input").innerText) === crypt(password, key)) {
             window.location.href = "/page5"
         } else {
             document.querySelector('.input').innerText = ""

@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    let crisis = new Audio('../sons/crisis.mp3')
+    let crisis = new Audio('/songs/crisis.mp3')
     setTimeout(() => {
         crisis.play()
         setTimeout(() => {

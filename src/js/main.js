@@ -26,7 +26,7 @@ const setInteractionSize = () => {
 
 const setImageSize = () => {
     let img = document.querySelector('img:not(.ignore)')
-    if(!img) return
+    if (!img) return
     let windowHeight = document.body.offsetHeight
     let windowWidth = document.body.offsetWidth
     if ((originalWidth / originalHeight) * windowHeight > windowWidth) {

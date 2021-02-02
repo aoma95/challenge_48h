@@ -1,1 +1,73 @@
-const _0x5c39=['495079oZYCRK','orange','.vote','click','22eYEQVP','Marron\x20est\x20mort\x20pile\x20à\x20la\x20sortie\x20de\x20shields,\x20et\x20je\x20soupçonne\x20Rose\x20parcequ’on\x20était\x20tous\x20les\x20trois\x20à\x20O²\x20pour\x20réparer\x20le\x20sabotage,\x20ensuite\x20je\x20suis\x20allé\x20à\x20Navigation\x20pendant\x20que\x20Marron\x20descendait\x20vers\x20Shields.','1741670JcClqp','461591RzPhHW','querySelector','../sons/loose.mp3','1581lRlozp','#pink','../sons/expulsion.mp3','addEventListener','.confirm','visible','52727EGTFex','querySelectorAll','interact','../sons/textpop.mp3','log','add','.reject','2lBAWbm','from','visibility','load','img','../img/voteeach.jpg','../img/win.jpg','play','../img/confirm','hidden','152667ioaeVa','\x20was\x20ejected!','../img/meetingchat.jpg','../img/','1GrXqES','570929neOXDF','5mBrlIR','C\x27est\x20donc\x20forcément\x20toi\x20car\x20je\x20suis\x20remonté\x20vers\x20caféteria\x20après\x20la\x20crise\x20avant\x20de\x20descendre\x20à\x20storage\x20donc\x20ça\x20ne\x20peut\x20pas\x20être\x20moi.','eject.jpg','src','1xordok','href','classList','.jpg','remove','../sons/among-us-vote-sound-effect.mp3','.interact','map','#orange'];const _0x6e3e=function(_0x6cd9fd,_0x1a81d5){_0x6cd9fd=_0x6cd9fd-0x1d4;let _0x5c39f8=_0x5c39[_0x6cd9fd];return _0x5c39f8;};const _0x4fa744=_0x6e3e;(function(_0x884a11,_0x3bd0c5){const _0x13a053=_0x6e3e;while(!![]){try{const _0x4e66a1=parseInt(_0x13a053(0x207))+-parseInt(_0x13a053(0x1f2))*-parseInt(_0x13a053(0x1f1))+parseInt(_0x13a053(0x206))+-parseInt(_0x13a053(0x1ed))*parseInt(_0x13a053(0x1f3))+-parseInt(_0x13a053(0x1d6))*parseInt(_0x13a053(0x204))+-parseInt(_0x13a053(0x1e3))*parseInt(_0x13a053(0x200))+parseInt(_0x13a053(0x1f7))*-parseInt(_0x13a053(0x1dc));if(_0x4e66a1===_0x3bd0c5)break;else _0x884a11['push'](_0x884a11['shift']());}catch(_0x28cb79){_0x884a11['push'](_0x884a11['shift']());}}}(_0x5c39,0xe3d44));const sleep=_0x46ed2c=>new Promise(_0x2c67ed=>setTimeout(_0x2c67ed,_0x46ed2c));window['addEventListener'](_0x4fa744(0x1e6),async()=>{const _0x22665a=_0x4fa744;let _0x2b8a44='',_0x5f56d4=new Audio(_0x22665a(0x1d8)),_0x469750=new Audio(_0x22665a(0x1df)),_0x50472c=new Audio(_0x22665a(0x1fc)),_0xf9563=new Audio('../sons/win.mp3'),_0x2bd1f1=new Audio(_0x22665a(0x1d5)),_0x1cf9aa=document[_0x22665a(0x1d4)](_0x22665a(0x1e7));await sleep(0x3e8),_0x469750['play'](),_0x1cf9aa['src']=_0x22665a(0x1ef),await sleep(0x3e8),console[_0x22665a(0x1e0)](_0x22665a(0x205)),await sleep(0x3e8),console[_0x22665a(0x1e0)](_0x22665a(0x1f4)),await sleep(0x3e8),_0x1cf9aa[_0x22665a(0x1f6)]='../img/voteeach.jpg',_0x50472c[_0x22665a(0x1ea)](),await sleep(0x12c),_0x50472c[_0x22665a(0x1ea)](),Array[_0x22665a(0x1e4)](document[_0x22665a(0x1dd)](_0x22665a(0x202)))['map'](_0x1515bd=>{const _0x43ad00=_0x22665a;if(_0x2b8a44===_0x1515bd['id'])return;_0x50472c[_0x43ad00(0x1ea)](),_0x1515bd[_0x43ad00(0x1d9)]('click',()=>{const _0xebaca5=_0x43ad00;_0x2b8a44=_0x1515bd['id'],_0x1cf9aa[_0xebaca5(0x1f6)]=_0xebaca5(0x1eb)+_0x2b8a44+_0xebaca5(0x1fa),document[_0xebaca5(0x1d4)]('.vote#'+_0x1515bd['id'])[_0xebaca5(0x1f9)][_0xebaca5(0x1fb)](_0xebaca5(0x1de)),document[_0xebaca5(0x1d4)]('.vote:not(#'+_0x1515bd['id']+')')[_0xebaca5(0x1f9)][_0xebaca5(0x1e1)]('interact'),Array[_0xebaca5(0x1e4)](document[_0xebaca5(0x1dd)]('.confirm'))[_0xebaca5(0x1fe)](_0x2fbde6=>_0x2fbde6['style'][_0xebaca5(0x1e5)]=_0x2fbde6['id']===_0x2b8a44?_0xebaca5(0x1db):_0xebaca5(0x1ec));});}),Array[_0x22665a(0x1e4)](document[_0x22665a(0x1dd)](_0x22665a(0x1e2)))[_0x22665a(0x1fe)](_0x3143e8=>{const _0x2f8a85=_0x22665a;_0x3143e8['addEventListener'](_0x2f8a85(0x203),()=>{const _0x2524f0=_0x2f8a85;if(_0x3143e8['id']!==_0x2b8a44)return;_0x1cf9aa['src']=_0x2524f0(0x1e8),_0x2b8a44='',Array[_0x2524f0(0x1e4)](document[_0x2524f0(0x1dd)](_0x2524f0(0x202)))['map'](_0x434a4b=>_0x434a4b[_0x2524f0(0x1f9)]['add'](_0x2524f0(0x1de))),Array[_0x2524f0(0x1e4)](document[_0x2524f0(0x1dd)](_0x2524f0(0x1da)))[_0x2524f0(0x1fe)](_0x1d50ed=>_0x1d50ed['style']['visibility']=_0x2524f0(0x1ec));});}),Array['from'](document['querySelectorAll']('.valid'))[_0x22665a(0x1fe)](_0x282625=>{const _0x276626=_0x22665a;_0x282625[_0x276626(0x1d9)]('click',async()=>{const _0x2f0336=_0x276626;if(_0x282625['id']!==_0x2b8a44)return;Array[_0x2f0336(0x1e4)](document[_0x2f0336(0x1dd)](_0x2f0336(0x1ff)))[_0x2f0336(0x1fe)](_0x244427=>_0x244427[_0x2f0336(0x1fb)]()),Array[_0x2f0336(0x1e4)](document[_0x2f0336(0x1dd)](_0x2f0336(0x1d7)))[_0x2f0336(0x1fe)](_0x24cfcf=>_0x24cfcf[_0x2f0336(0x1fb)]()),console['log'](_0x2b8a44+_0x2f0336(0x1ee)),_0x1cf9aa['src']=_0x2f0336(0x1f0)+_0x2b8a44+_0x2f0336(0x1f5),_0x5f56d4['play'](),await sleep(0xbb8),_0x2b8a44===_0x2f0336(0x201)?(_0x1cf9aa['src']=_0x2f0336(0x1e9),_0xf9563['play']()):(_0x1cf9aa[_0x2f0336(0x1f6)]='../img/defeat.jpg',_0x2bd1f1[_0x2f0336(0x1ea)]()),Array['from'](document[_0x2f0336(0x1dd)](_0x2f0336(0x1fd)))[_0x2f0336(0x1fe)](_0x3bed16=>_0x3bed16[_0x2f0336(0x1d9)]('click',()=>window['location'][_0x2f0336(0x1f8)]='/'));});});});
+const sleep = (time) => new Promise((resolve) => setTimeout(resolve, time))
+
+window.addEventListener('load', async () => {
+
+    let select = ""
+
+    let expulsion = new Audio('/songs/expulsion.mp3')
+    let textpop = new Audio('/songs/textpop.mp3')
+    let vote = new Audio('/songs/among-us-vote-sound-effect.mp3')
+    let win = new Audio('/songs/win.mp3')
+    let loose = new Audio('/songs/loose.mp3')
+    let img = document.querySelector('img')
+
+    await sleep(1000)
+    textpop.play()
+    img.src = "/img/meetingchat.jpg"
+
+    await sleep(1000)
+    console.log('Marron est mort pile à la sortie de shields, et je soupçonne Rose parcequ’on était tous les trois à O² pour réparer le sabotage, ensuite je suis allé à Navigation pendant que Marron descendait vers Shields.')
+
+    await sleep(1000)
+    console.log("C'est donc forcément toi car je suis remonté vers caféteria après la crise avant de descendre à storage donc ça ne peut pas être moi.")
+
+    await sleep(1000)
+    img.src = "/img/voteeach.jpg"
+    vote.play()
+    await sleep(300)
+    vote.play()
+    Array.from(document.querySelectorAll('.vote')).map(element => {
+        element.classList.add("interact")
+        vote.play()
+        element.addEventListener("click", () => {
+            if (select === element.id) return
+            select = element.id
+            img.src = `/img/confirm${select}.jpg`
+
+            document.querySelector(`.vote#${element.id}`).classList.remove('interact')
+            document.querySelector(`.vote:not(#${element.id})`).classList.add('interact')
+
+            Array.from(document.querySelectorAll(".confirm")).map(element => element.style.visibility = element.id === select ? "visible" : "hidden")
+        })
+    })
+    Array.from(document.querySelectorAll('.reject')).map(element => {
+        element.addEventListener("click", () => {
+            if (element.id !== select) return
+
+            img.src = `/img/voteeach.jpg`
+            select = ""
+
+            Array.from(document.querySelectorAll('.vote')).map(el => el.classList.add('interact'))
+            Array.from(document.querySelectorAll('.confirm')).map(element => element.style.visibility = "hidden")
+        })
+    })
+    Array.from(document.querySelectorAll('.valid')).map(element => {
+        element.addEventListener("click", async () => {
+            if (element.id !== select) return
+            Array.from(document.querySelectorAll('#orange')).map(el => el.remove())
+            Array.from(document.querySelectorAll('#pink')).map(el => el.remove())
+            console.log(`${select} was ejected!`)
+            img.src = `/img/${select}eject.jpg`
+            expulsion.play()
+            await sleep(3000)
+            if (select === "orange") {
+                img.src = `/img/win.jpg`
+                win.play()
+            } else {
+                img.src = `/img/defeat.jpg`
+                loose.play()
+            }
+            Array.from(document.querySelectorAll('.interact')).map(el => el.addEventListener('click', () => window.location.href = "/"))
+        })
+    })
+})
