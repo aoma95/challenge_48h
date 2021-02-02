@@ -11,6 +11,17 @@ html,body{
     font-weight: normal;
     src: local('../asset/In your face, joffrey!.woff'), url('../asset/In your face, joffrey!.woff') format('woff');
 }
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+.main {
+    z-index: 1;
+}
 h1 {
     text-align: center;
 }
