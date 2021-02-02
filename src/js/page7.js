@@ -48,10 +48,10 @@ window.addEventListener('load', async () => {
         })
     })
     Array.from(document.querySelectorAll('.valid')).map(element => {
-        element.addEventListener("click", () => {
+        element.addEventListener("click", async () => {
             if(element.id !== select) return
+            img.src = ``
             if(select === "orange") {
-                alert("win")
             } else {
                 alert("loose")
             }
