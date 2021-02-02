@@ -10,8 +10,10 @@ const setInteractionSize = () => {
     let height = img.offsetHeight
     let width = img.offsetWidth
 
-    div.style.height = `${height}px`
-    div.style.width = `${width}px`
+    if(div) {
+        div.style.height = `${height}px`
+        div.style.width = `${width}px`
+    }
 
     originalData.map(({element, style}) => {
         Object.keys(style).map(key => {
