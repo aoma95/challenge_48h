@@ -23,6 +23,8 @@ module.exports = app => {
 
     app.get('/page6', (req, res) => {
         res.render('page6.html')
+    app.get('/page7', (req, res) => {
+        res.render('page7.html')
     })
 
 }
