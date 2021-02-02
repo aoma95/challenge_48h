@@ -1,97 +1,91 @@
-
-
-const sleep = (time) => new Promise((resolve) => setTimeout(resolve, time))
+const sleep = (time) => new Promise((resolve) => setTimeout(resolve, time));
 
 window.addEventListener('load', async () => {
 
-    let select = ""
+    let select = "";
 
-    let textpop = new Audio('/sons/textpop.mp3')
-    let doublevote = new Audio('/sons/among-us-vote-sound-effect.mp3')
-    let img = document.querySelector('img')
+    let expulsion = new Audio('../sons/expulsion.mp3');
+    let textpop = new Audio('../sons/textpop.mp3');
+    let doublevote = new Audio('../sons/among-us-vote-sound-effect.mp3');
+    let win = new Audio('../sons/win.mp3');
+    let loose = new Audio('../sons/loose.mp3');
+    let img = document.querySelector('img');
 
-    await sleep(1000)
-    textpop.play()
-    img.src = "/img/meetingchat.jpg"
+    await sleep(1000);
+    textpop.play();
+    img.src = "../img/meetingchat.jpg";
 
-    await sleep(1000)
-    console.log('Marron est mort pile à la sortie de shields, et je soupçonne Rose parcequ’on était tous les trois à O² pour réparer le sabotage, ensuite je suis allé à Navigation pendant que Marron descendait vers Shields.')
+    await sleep(1000);
+    console.log('Marron est mort pile à la sortie de shields, et je soupçonne Rose parcequ’on était tous les trois à O² pour réparer le sabotage, ensuite je suis allé à Navigation pendant que Marron descendait vers Shields.');
 
-    await sleep(1000)
-    console.log("C'est donc forcément toi car je suis remonté vers caféteria après la crise avant de descendre à storage donc ça ne peut pas être moi.")
+    await sleep(1000);
+    console.log("C'est donc forcément toi car je suis remonté vers caféteria après la crise avant de descendre à storage donc ça ne peut pas être moi.");
 
-    await sleep(1000)
-    img.src = "/img/voteeach.jpg"
-    doublevote.play()
+    await sleep(1000);
+    img.src = "../img/voteeach.jpg";
+    doublevote.play();
     Array.from(document.querySelectorAll('.vote')).map(element => {
-        if(select === element.id) return
+        if(select === element.id) return;
 
         element.addEventListener("click", () => {
-            select = element.id
-            img.src = `/img/confirm${select}.jpg`
+            select = element.id;
+            img.src = `../img/confirm${select}.jpg`;
 
-            document.querySelector(`.vote#${element.id}`).classList.remove('interact')
-            document.querySelector(`.vote:not(#${element.id})`).classList.add('interact')
+            document.querySelector(`.vote#${element.id}`).classList.remove('interact');
+            document.querySelector(`.vote:not(#${element.id})`).classList.add('interact');
 
-            Array.from(document.querySelectorAll(".confirm")).map(element => element.style.visibility = element.id === select ? "visible" : "hidden")
+            Array.from(document.querySelectorAll(".confirm")).map(element => element.style.visibility = element.id === select ? "visible" : "hidden");
         })
     })
     Array.from(document.querySelectorAll('.reject')).map(element => {
         element.addEventListener("click", () => {
-            if(element.id !== select) return
+            if(element.id !== select) return;
 
-            img.src = `/img/voteeach.jpg`
-            select = ""
+            img.src = `../img/voteeach.jpg`;
+            select = "";
 
-            Array.from(document.querySelectorAll('.vote')).map(el => el.classList.add('interact'))
-            Array.from(document.querySelectorAll('.confirm')).map(element => element.style.visibility = "hidden")
+            Array.from(document.querySelectorAll('.vote')).map(el => el.classList.add('interact'));
+            Array.from(document.querySelectorAll('.confirm')).map(element => element.style.visibility = "hidden");
         })
     })
     Array.from(document.querySelectorAll('.valid')).map(element => {
         element.addEventListener("click", async () => {
-            if(element.id !== select) return
+            if(element.id !== select) return;
             if(select === "orange") {
-                window.location.href = "/page8"
+                console.log('Orange was ejected');
+                img.src="../img/orangeeject.jpg";
+                expulsion.play();
+                await sleep(3000);
+                img.src="../img/win.jpg";
+                win.play();
+
+
+                // vOrange.addEventListener('click', () => {
+                //     expulsion.play();
+                //     while(body.firstChild){
+                //         body.removeChild(body.firstChild);
+                //     }
+                //     const image2=document.createElement('img');
+                //     image2.src="../img/orangeeject.jpg";
+                //     image2.id="img";
+                //     document.querySelector('body').appendChild(image2);
+                //     let img=document.getElementById('img');
+                //
+                //     setTimeout(() => {
+                //         img.setAttribute("src","../img/win.jpg");
+                //         win.play();
+                //     }, 4000);
+                // });
+
+
             } else {
-                window.location.href = "/page9"
+                console.log('Pink was ejected');
+                img.src="../img/pinkeject.jpg";
+                expulsion.play();
+                await sleep(3000);
+                img.src="../img/defeat.jpg";
+                loose.play();
             }
         })
     })
 })
-// let img=document.getElementById('img');
-// let pink=document.getElementById('pink');
-// let orange=document.getElementById('orange');
-// let vPink=document.getElementById('vPink');
-// let vOrange=document.getElementById('vOrange');
-
-// let textpop=new Audio('../sons/textpop.mp3');
-// let doublevote=new Audio('../sons/among-us-vote-sound-effect.mp3');
-
-
-
-// setTimeout(() => {
-//     img.setAttribute("src","../img/meetingchat.jpg");
-//     textpop.play();
-//     setTimeout(() => {
-//         console.log('Marron est mort pile à la sortie de shields, et je soupçonne Rose parcequ’on était tous les trois à O² pour réparer le sabotage, ensuite je suis allé à Navigation pendant que Marron descendait vers Shields. ');
-//         setTimeout(() => {
-//             console.log('C’est donc forcément toi car je suis remonté vers caféteria après la crise avant de descendre à storage donc ça ne peut pas être moi. ');
-//             setTimeout(() => {
-//                 img.setAttribute("src","../img/voteeach.jpg");
-//                 doublevote.play();
-//                 pink.addEventListener('click', () => {
-//                     img.setAttribute("src","../img/confirmpink.jpg");
-//                     vPink.addEventListener('click', () => {
-//                         alert("Loose");
-//                     });
-//                 });
-//                 orange.addEventListener('click', () => {
-//                     img.setAttribute("src","../img/confirmorange.jpg");
-//                     vOrange.addEventListener('click', () => {
-//                         alert("Win");
-//                     });
-//                 });
-//             }, 500);
-//         }, 1000);
-//     }, 1000);
-// }, 1000);
