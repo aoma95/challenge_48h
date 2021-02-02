@@ -19,14 +19,14 @@ window.addEventListener('load', () => {
         document.querySelector('.main').remove()
 
         let img = document.createElement('img')
-        img.src = '/img/start.png'
+        img.src = '/img/start.jpg'
         document.body.insertBefore(img, document.querySelector('script'))
 
         setImageSize()
         setInteractionSize()
 
         setTimeout(() => {
-            window.location.href = "/page2"
+            window.location.href = "/cams"
         }, 4000)
     })
 

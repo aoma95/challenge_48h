@@ -3,13 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Page 6</title>
+    <title>Caméra</title>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
-    <!-- <img src="/img/crisis.jpg" alt="image de crisis"> -->
-    <script type="text/javascript" src="/js/main.js"></script>
+
+<img src="../img/report.jpg" alt="image d'un report">
+
+<script type="text/javascript" src="/js/main.js"></script>
+<script>
+    let report = new Audio('../sons/report.mp3')
+    setTimeout(() => {
+        report.play()
+        setTimeout(() => {
+            window.location.href = "/meeting"
+        }, 2000)
+    }, 1000)
+</script>
 </body>
 
 </html>

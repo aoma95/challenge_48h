@@ -58,6 +58,11 @@ window.onload = () => {
     let key = generateCode(1, true)
     document.querySelector(".code").innerText = `${password} ${key}`
 
+    let crisis = new Audio('../sons/crisis.mp3')
+    crisis.loop =true
+    crisis.play()
+
+
     Array.from(document.querySelectorAll('.interaction *')).map(element => {
         let style = element.style.cssText.split(';').reduce((object, value) => {
             let declaration = value.split(':').map(e => e.trim())
@@ -91,7 +96,7 @@ window.onload = () => {
     })
     document.querySelector('.key-submit').addEventListener("click", () => {
         if(parseInt(document.querySelector(".input").innerText) === crypt(password, key)) {
-            alert("ok!")
+            window.location.href = "/admin_map"
         } else {
             document.querySelector('.input').innerText = ""
         }

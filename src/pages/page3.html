@@ -12,13 +12,17 @@
     <div class="interaction"></div>
     <img src="/img/crisis.jpg" alt="image de crisis">
 
-    <script type="text/javascript" src="/js/main.js">
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script>
         let crisis = new Audio('../sons/crisis.mp3')
-
         setTimeout(() => {
-            crisis.play()
+        crisis.play()
+            setTimeout(() => {
+                window.location.href = "/mdp"
+            }, 2000)
         }, 500)
-        console.log('redirection page 4')
+
+
     </script>
 </body>
 

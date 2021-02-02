@@ -6,10 +6,10 @@ const originalData = []
 const setInteractionSize = () => {
     let img = document.querySelector('img:not(.ignore)')
     let div = document.querySelector('.interaction')
+    let height = img.offsetHeight
+    let width = img.offsetWidth
 
     if (img) {
-        let height = img.offsetHeight
-        let width = img.offsetWidth
         originalData.map(({ element, style }) => {
             Object.keys(style).map(key => {
                 element.style[key] = `${width * style[key] / originalWidth}px`
